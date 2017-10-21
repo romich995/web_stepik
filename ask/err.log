@@ -1,0 +1,638 @@
+[2017-10-21 16:25:32 +0000] [5176] [DEBUG] Current configuration:
+  proxy_protocol: False
+  worker_connections: 1000
+  statsd_host: None
+  max_requests_jitter: 0
+  post_fork: <function post_fork at 0x7fc21b4cbe60>
+  pythonpath: None
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 3
+  suppress_ragged_eofs: True
+  syslog: False
+  syslog_facility: user
+  when_ready: <function when_ready at 0x7fc21b4cbb90>
+  pre_fork: <function pre_fork at 0x7fc21b4cbcf8>
+  cert_reqs: 0
+  preload_app: False
+  keepalive: 2
+  accesslog: /home/box/web/acc.log
+  group: 33
+  graceful_timeout: 30
+  do_handshake_on_connect: False
+  spew: False
+  workers: 2
+  proc_name: gunicorn-django.conf
+  sendfile: None
+  pidfile: /var/run/gunicorn/gunicorn-django.conf.pid
+  umask: 0
+  on_reload: <function on_reload at 0x7fc21b4cba28>
+  pre_exec: <function pre_exec at 0x7fc21b4d5488>
+  worker_tmp_dir: None
+  post_worker_init: <function post_worker_init at 0x7fc21b4d5050>
+  limit_request_fields: 100
+  on_exit: <function on_exit at 0x7fc21b4d5b18>
+  config: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x7fc21b4d55f0>
+  post_request: <function post_request at 0x7fc21b4d56e0>
+  user: 33
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x7fc21b4d51b8>
+  threads: 1
+  max_requests: 0
+  limit_request_line: 4094
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  worker_exit: <function worker_exit at 0x7fc21b4d5848>
+  chdir: /home/box/web/ask
+  paste: None
+  default_proc_name: ask.wsgi:application
+  errorlog: ./err.log
+  loglevel: debug
+  logconfig: None
+  syslog_addr: udp://localhost:514
+  syslog_prefix: None
+  daemon: True
+  ciphers: TLSv1
+  on_starting: <function on_starting at 0x7fc21b4cb8c0>
+  worker_abort: <function worker_abort at 0x7fc21b4d5320>
+  bind: ['0.0.0.0:8000']
+  raw_env: []
+  reload: False
+  check_config: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x7fc21b4d59b0>
+  timeout: 15
+  ca_certs: None
+  django_settings: None
+  tmp_upload_dir: None
+  keyfile: None
+  backlog: 2048
+  logger_class: gunicorn.glogging.Logger
+  statsd_prefix: 
+[2017-10-21 16:25:32 +0000] [5176] [INFO] Starting gunicorn 19.4.5
+[2017-10-21 16:25:32 +0000] [5176] [DEBUG] Arbiter booted
+[2017-10-21 16:25:32 +0000] [5176] [INFO] Listening at: http://0.0.0.0:8000 (5176)
+[2017-10-21 16:25:32 +0000] [5176] [INFO] Using worker: sync
+[2017-10-21 16:25:32 +0000] [5183] [INFO] Booting worker with pid: 5183
+[2017-10-21 16:25:32 +0000] [5184] [INFO] Booting worker with pid: 5184
+[2017-10-21 16:25:32 +0000] [5176] [DEBUG] 2 workers
+[2017-10-21 13:25:36 +0000] [5184] [DEBUG] GET /login/
+[2017-10-21 13:25:37 +0000] [5183] [DEBUG] GET /login/
+[2017-10-21 13:25:37 +0000] [5184] [DEBUG] GET /login/
+[2017-10-21 13:25:38 +0000] [5184] [DEBUG] GET /login/
+[2017-10-21 13:27:31 +0000] [5184] [DEBUG] GET /login/
+[2017-10-21 13:27:39 +0000] [5183] [DEBUG] HEAD /
+[2017-10-21 13:27:44 +0000] [5184] [DEBUG] GET /
+[2017-10-21 16:29:09 +0000] [5176] [INFO] Handling signal: term
+[2017-10-21 13:29:09 +0000] [5184] [INFO] Worker exiting (pid: 5184)
+[2017-10-21 13:29:09 +0000] [5183] [INFO] Worker exiting (pid: 5183)
+[2017-10-21 16:29:09 +0000] [5176] [INFO] Shutting down: Master
+[2017-10-21 16:30:44 +0000] [5688] [DEBUG] Current configuration:
+  proxy_protocol: False
+  worker_connections: 1000
+  statsd_host: None
+  max_requests_jitter: 0
+  post_fork: <function post_fork at 0x7f15f2cace60>
+  pythonpath: None
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 3
+  suppress_ragged_eofs: True
+  syslog: False
+  syslog_facility: user
+  when_ready: <function when_ready at 0x7f15f2cacb90>
+  pre_fork: <function pre_fork at 0x7f15f2caccf8>
+  cert_reqs: 0
+  preload_app: False
+  keepalive: 2
+  accesslog: /home/box/web/acc.log
+  group: 33
+  graceful_timeout: 30
+  do_handshake_on_connect: False
+  spew: False
+  workers: 2
+  proc_name: gunicorn-django.conf
+  sendfile: None
+  pidfile: /var/run/gunicorn/gunicorn-django.conf.pid
+  umask: 0
+  on_reload: <function on_reload at 0x7f15f2caca28>
+  pre_exec: <function pre_exec at 0x7f15f2cb6488>
+  worker_tmp_dir: None
+  post_worker_init: <function post_worker_init at 0x7f15f2cb6050>
+  limit_request_fields: 100
+  on_exit: <function on_exit at 0x7f15f2cb6b18>
+  config: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x7f15f2cb65f0>
+  post_request: <function post_request at 0x7f15f2cb66e0>
+  user: 33
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x7f15f2cb61b8>
+  threads: 1
+  max_requests: 0
+  limit_request_line: 4094
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  worker_exit: <function worker_exit at 0x7f15f2cb6848>
+  chdir: /home/box/web/ask
+  paste: None
+  default_proc_name: ask.wsgi:application
+  errorlog: ./err.log
+  loglevel: debug
+  logconfig: None
+  syslog_addr: udp://localhost:514
+  syslog_prefix: None
+  daemon: True
+  ciphers: TLSv1
+  on_starting: <function on_starting at 0x7f15f2cac8c0>
+  worker_abort: <function worker_abort at 0x7f15f2cb6320>
+  bind: ['0.0.0.0:8000']
+  raw_env: []
+  reload: False
+  check_config: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x7f15f2cb69b0>
+  timeout: 15
+  ca_certs: None
+  django_settings: None
+  tmp_upload_dir: None
+  keyfile: None
+  backlog: 2048
+  logger_class: gunicorn.glogging.Logger
+  statsd_prefix: 
+[2017-10-21 16:30:44 +0000] [5688] [INFO] Starting gunicorn 19.4.5
+[2017-10-21 16:30:44 +0000] [5688] [DEBUG] Arbiter booted
+[2017-10-21 16:30:44 +0000] [5688] [INFO] Listening at: http://0.0.0.0:8000 (5688)
+[2017-10-21 16:30:44 +0000] [5688] [INFO] Using worker: sync
+[2017-10-21 16:30:44 +0000] [5712] [INFO] Booting worker with pid: 5712
+[2017-10-21 16:30:44 +0000] [5713] [INFO] Booting worker with pid: 5713
+[2017-10-21 16:30:45 +0000] [5688] [DEBUG] 2 workers
+[2017-10-21 13:30:47 +0000] [5712] [DEBUG] GET /
+[2017-10-21 13:30:53 +0000] [5712] [DEBUG] GET /
+[2017-10-21 16:34:12 +0000] [5688] [INFO] Handling signal: term
+[2017-10-21 13:34:12 +0000] [5712] [INFO] Worker exiting (pid: 5712)
+[2017-10-21 13:34:12 +0000] [5713] [INFO] Worker exiting (pid: 5713)
+[2017-10-21 16:34:13 +0000] [5688] [INFO] Shutting down: Master
+[2017-10-21 16:34:13 +0000] [5919] [DEBUG] Current configuration:
+  proxy_protocol: False
+  worker_connections: 1000
+  statsd_host: None
+  max_requests_jitter: 0
+  post_fork: <function post_fork at 0x7f8fea45fe60>
+  pythonpath: None
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 3
+  suppress_ragged_eofs: True
+  syslog: False
+  syslog_facility: user
+  when_ready: <function when_ready at 0x7f8fea45fb90>
+  pre_fork: <function pre_fork at 0x7f8fea45fcf8>
+  cert_reqs: 0
+  preload_app: False
+  keepalive: 2
+  accesslog: /home/box/web/acc.log
+  group: 33
+  graceful_timeout: 30
+  do_handshake_on_connect: False
+  spew: False
+  workers: 2
+  proc_name: gunicorn-django.conf
+  sendfile: None
+  pidfile: /var/run/gunicorn/gunicorn-django.conf.pid
+  umask: 0
+  on_reload: <function on_reload at 0x7f8fea45fa28>
+  pre_exec: <function pre_exec at 0x7f8fea469488>
+  worker_tmp_dir: None
+  post_worker_init: <function post_worker_init at 0x7f8fea469050>
+  limit_request_fields: 100
+  on_exit: <function on_exit at 0x7f8fea469b18>
+  config: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x7f8fea4695f0>
+  post_request: <function post_request at 0x7f8fea4696e0>
+  user: 33
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x7f8fea4691b8>
+  threads: 1
+  max_requests: 0
+  limit_request_line: 4094
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  worker_exit: <function worker_exit at 0x7f8fea469848>
+  chdir: /home/box/web/ask
+  paste: None
+  default_proc_name: --pythonpath=/home/box/web/ask
+  errorlog: ./err.log
+  loglevel: debug
+  logconfig: None
+  syslog_addr: udp://localhost:514
+  syslog_prefix: None
+  daemon: True
+  ciphers: TLSv1
+  on_starting: <function on_starting at 0x7f8fea45f8c0>
+  worker_abort: <function worker_abort at 0x7f8fea469320>
+  bind: ['0.0.0.0:8000']
+  raw_env: []
+  reload: False
+  check_config: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x7f8fea4699b0>
+  timeout: 15
+  ca_certs: None
+  django_settings: None
+  tmp_upload_dir: None
+  keyfile: None
+  backlog: 2048
+  logger_class: gunicorn.glogging.Logger
+  statsd_prefix: 
+[2017-10-21 16:34:13 +0000] [5919] [INFO] Starting gunicorn 19.4.5
+[2017-10-21 16:34:13 +0000] [5919] [DEBUG] Arbiter booted
+[2017-10-21 16:34:13 +0000] [5919] [INFO] Listening at: http://0.0.0.0:8000 (5919)
+[2017-10-21 16:34:13 +0000] [5919] [INFO] Using worker: sync
+[2017-10-21 16:34:13 +0000] [5926] [INFO] Booting worker with pid: 5926
+[2017-10-21 16:34:13 +0000] [5926] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python2.7/dist-packages/gunicorn/util.py", line 366, in import_app
+    __import__(module)
+ImportError: Import by filename is not supported.
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python2.7/dist-packages/gunicorn/util.py", line 366, in import_app
+    __import__(module)
+ImportError: Import by filename is not supported.
+[2017-10-21 16:34:13 +0000] [5926] [INFO] Worker exiting (pid: 5926)
+[2017-10-21 16:34:13 +0000] [5919] [INFO] Shutting down: Master
+[2017-10-21 16:34:13 +0000] [5919] [INFO] Reason: Worker failed to boot.
+[2017-10-21 16:39:00 +0000] [6158] [DEBUG] Current configuration:
+  proxy_protocol: False
+  worker_connections: 1000
+  statsd_host: None
+  max_requests_jitter: 0
+  post_fork: <function post_fork at 0x7f43b2e07e60>
+  pythonpath: None
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 3
+  suppress_ragged_eofs: True
+  syslog: False
+  syslog_facility: user
+  when_ready: <function when_ready at 0x7f43b2e07b90>
+  pre_fork: <function pre_fork at 0x7f43b2e07cf8>
+  cert_reqs: 0
+  preload_app: False
+  keepalive: 2
+  accesslog: /home/box/web/acc.log
+  group: 33
+  graceful_timeout: 30
+  do_handshake_on_connect: False
+  spew: False
+  workers: 2
+  proc_name: gunicorn-django.conf
+  sendfile: None
+  pidfile: /var/run/gunicorn/gunicorn-django.conf.pid
+  umask: 0
+  on_reload: <function on_reload at 0x7f43b2e07a28>
+  pre_exec: <function pre_exec at 0x7f43b2e11488>
+  worker_tmp_dir: None
+  post_worker_init: <function post_worker_init at 0x7f43b2e11050>
+  limit_request_fields: 100
+  on_exit: <function on_exit at 0x7f43b2e11b18>
+  config: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x7f43b2e115f0>
+  post_request: <function post_request at 0x7f43b2e116e0>
+  user: 33
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x7f43b2e111b8>
+  threads: 1
+  max_requests: 0
+  limit_request_line: 4094
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  worker_exit: <function worker_exit at 0x7f43b2e11848>
+  chdir: /home/box/web/ask
+  paste: None
+  default_proc_name: ask.wsgi:application
+  errorlog: ./err.log
+  loglevel: debug
+  logconfig: None
+  syslog_addr: udp://localhost:514
+  syslog_prefix: None
+  daemon: True
+  ciphers: TLSv1
+  on_starting: <function on_starting at 0x7f43b2e078c0>
+  worker_abort: <function worker_abort at 0x7f43b2e11320>
+  bind: ['0.0.0.0:8000']
+  raw_env: []
+  reload: False
+  check_config: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x7f43b2e119b0>
+  timeout: 15
+  ca_certs: None
+  django_settings: None
+  tmp_upload_dir: None
+  keyfile: None
+  backlog: 2048
+  logger_class: gunicorn.glogging.Logger
+  statsd_prefix: 
+[2017-10-21 16:39:00 +0000] [6158] [INFO] Starting gunicorn 19.4.5
+[2017-10-21 16:39:00 +0000] [6158] [DEBUG] Arbiter booted
+[2017-10-21 16:39:00 +0000] [6158] [INFO] Listening at: http://0.0.0.0:8000 (6158)
+[2017-10-21 16:39:00 +0000] [6158] [INFO] Using worker: sync
+[2017-10-21 16:39:00 +0000] [6165] [INFO] Booting worker with pid: 6165
+[2017-10-21 16:39:00 +0000] [6166] [INFO] Booting worker with pid: 6166
+[2017-10-21 16:39:00 +0000] [6158] [DEBUG] 2 workers
+[2017-10-21 13:39:14 +0000] [6165] [DEBUG] GET /
+[2017-10-21 16:50:10 +0000] [6158] [INFO] Handling signal: term
+[2017-10-21 13:50:10 +0000] [6165] [INFO] Worker exiting (pid: 6165)
+[2017-10-21 13:50:10 +0000] [6166] [INFO] Worker exiting (pid: 6166)
+[2017-10-21 16:50:10 +0000] [6158] [INFO] Shutting down: Master
+[2017-10-21 16:50:10 +0000] [6618] [DEBUG] Current configuration:
+  proxy_protocol: False
+  worker_connections: 1000
+  statsd_host: None
+  max_requests_jitter: 0
+  post_fork: <function post_fork at 0x7f84e1e55e60>
+  pythonpath: None
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 3
+  suppress_ragged_eofs: True
+  syslog: False
+  syslog_facility: user
+  when_ready: <function when_ready at 0x7f84e1e55b90>
+  pre_fork: <function pre_fork at 0x7f84e1e55cf8>
+  cert_reqs: 0
+  preload_app: False
+  keepalive: 2
+  accesslog: /home/box/web/acc.log
+  group: 33
+  graceful_timeout: 30
+  do_handshake_on_connect: False
+  spew: False
+  workers: 2
+  proc_name: gunicorn-django.conf
+  sendfile: None
+  pidfile: /var/run/gunicorn/gunicorn-django.conf.pid
+  umask: 0
+  on_reload: <function on_reload at 0x7f84e1e55a28>
+  pre_exec: <function pre_exec at 0x7f84e1e5f488>
+  worker_tmp_dir: None
+  post_worker_init: <function post_worker_init at 0x7f84e1e5f050>
+  limit_request_fields: 100
+  on_exit: <function on_exit at 0x7f84e1e5fb18>
+  config: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x7f84e1e5f5f0>
+  post_request: <function post_request at 0x7f84e1e5f6e0>
+  user: 33
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x7f84e1e5f1b8>
+  threads: 1
+  max_requests: 0
+  limit_request_line: 4094
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  worker_exit: <function worker_exit at 0x7f84e1e5f848>
+  chdir: /home/box/web/ask
+  paste: None
+  default_proc_name: ask.wsgi:application
+  errorlog: ./err.log
+  loglevel: debug
+  logconfig: None
+  syslog_addr: udp://localhost:514
+  syslog_prefix: None
+  daemon: True
+  ciphers: TLSv1
+  on_starting: <function on_starting at 0x7f84e1e558c0>
+  worker_abort: <function worker_abort at 0x7f84e1e5f320>
+  bind: ['0.0.0.0:8000']
+  raw_env: []
+  reload: False
+  check_config: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x7f84e1e5f9b0>
+  timeout: 15
+  ca_certs: None
+  django_settings: None
+  tmp_upload_dir: None
+  keyfile: None
+  backlog: 2048
+  logger_class: gunicorn.glogging.Logger
+  statsd_prefix: 
+[2017-10-21 16:50:10 +0000] [6618] [INFO] Starting gunicorn 19.4.5
+[2017-10-21 16:50:10 +0000] [6618] [DEBUG] Arbiter booted
+[2017-10-21 16:50:10 +0000] [6618] [INFO] Listening at: http://0.0.0.0:8000 (6618)
+[2017-10-21 16:50:10 +0000] [6618] [INFO] Using worker: sync
+[2017-10-21 16:50:10 +0000] [6624] [INFO] Booting worker with pid: 6624
+[2017-10-21 16:50:10 +0000] [6627] [INFO] Booting worker with pid: 6627
+[2017-10-21 16:50:10 +0000] [6618] [DEBUG] 2 workers
+[2017-10-21 13:55:20 +0000] [6627] [DEBUG] GET /
+[2017-10-21 14:10:15 +0000] [6624] [DEBUG] GET /
+[2017-10-21 14:10:15 +0000] [6627] [DEBUG] GET /favicon.ico
+[2017-10-21 17:13:13 +0000] [6618] [INFO] Handling signal: term
+[2017-10-21 14:13:13 +0000] [6627] [INFO] Worker exiting (pid: 6627)
+[2017-10-21 14:13:13 +0000] [6624] [INFO] Worker exiting (pid: 6624)
+[2017-10-21 17:13:13 +0000] [6618] [INFO] Shutting down: Master
+[2017-10-21 17:13:14 +0000] [7187] [DEBUG] Current configuration:
+  proxy_protocol: False
+  worker_connections: 1000
+  statsd_host: None
+  max_requests_jitter: 0
+  post_fork: <function post_fork at 0x7fbc646a6e60>
+  pythonpath: None
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 3
+  suppress_ragged_eofs: True
+  syslog: False
+  syslog_facility: user
+  when_ready: <function when_ready at 0x7fbc646a6b90>
+  pre_fork: <function pre_fork at 0x7fbc646a6cf8>
+  cert_reqs: 0
+  preload_app: False
+  keepalive: 2
+  accesslog: /home/box/web/acc.log
+  group: 33
+  graceful_timeout: 30
+  do_handshake_on_connect: False
+  spew: False
+  workers: 2
+  proc_name: gunicorn-django.conf
+  sendfile: None
+  pidfile: /var/run/gunicorn/gunicorn-django.conf.pid
+  umask: 0
+  on_reload: <function on_reload at 0x7fbc646a6a28>
+  pre_exec: <function pre_exec at 0x7fbc646b0488>
+  worker_tmp_dir: None
+  post_worker_init: <function post_worker_init at 0x7fbc646b0050>
+  limit_request_fields: 100
+  on_exit: <function on_exit at 0x7fbc646b0b18>
+  config: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x7fbc646b05f0>
+  post_request: <function post_request at 0x7fbc646b06e0>
+  user: 33
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x7fbc646b01b8>
+  threads: 1
+  max_requests: 0
+  limit_request_line: 4094
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  worker_exit: <function worker_exit at 0x7fbc646b0848>
+  chdir: /home/box/web/ask
+  paste: None
+  default_proc_name: ask.wsgi:application
+  errorlog: ./err.log
+  loglevel: debug
+  logconfig: None
+  syslog_addr: udp://localhost:514
+  syslog_prefix: None
+  daemon: True
+  ciphers: TLSv1
+  on_starting: <function on_starting at 0x7fbc646a68c0>
+  worker_abort: <function worker_abort at 0x7fbc646b0320>
+  bind: ['0.0.0.0:8000']
+  raw_env: []
+  reload: False
+  check_config: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x7fbc646b09b0>
+  timeout: 15
+  ca_certs: None
+  django_settings: None
+  tmp_upload_dir: None
+  keyfile: None
+  backlog: 2048
+  logger_class: gunicorn.glogging.Logger
+  statsd_prefix: 
+[2017-10-21 17:13:14 +0000] [7187] [INFO] Starting gunicorn 19.4.5
+[2017-10-21 17:13:14 +0000] [7187] [DEBUG] Arbiter booted
+[2017-10-21 17:13:14 +0000] [7187] [INFO] Listening at: http://0.0.0.0:8000 (7187)
+[2017-10-21 17:13:14 +0000] [7187] [INFO] Using worker: sync
+[2017-10-21 17:13:14 +0000] [7194] [INFO] Booting worker with pid: 7194
+[2017-10-21 17:13:14 +0000] [7195] [INFO] Booting worker with pid: 7195
+[2017-10-21 17:13:14 +0000] [7187] [DEBUG] 2 workers
+[2017-10-21 17:13:37 +0000] [7187] [INFO] Handling signal: term
+[2017-10-21 14:13:37 +0000] [7195] [INFO] Worker exiting (pid: 7195)
+[2017-10-21 14:13:37 +0000] [7194] [INFO] Worker exiting (pid: 7194)
+[2017-10-21 17:13:37 +0000] [7187] [INFO] Shutting down: Master
+[2017-10-21 17:13:37 +0000] [7322] [DEBUG] Current configuration:
+  proxy_protocol: False
+  worker_connections: 1000
+  statsd_host: None
+  max_requests_jitter: 0
+  post_fork: <function post_fork at 0x7fda96538e60>
+  pythonpath: None
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 3
+  suppress_ragged_eofs: True
+  syslog: False
+  syslog_facility: user
+  when_ready: <function when_ready at 0x7fda96538b90>
+  pre_fork: <function pre_fork at 0x7fda96538cf8>
+  cert_reqs: 0
+  preload_app: False
+  keepalive: 2
+  accesslog: /home/box/web/acc.log
+  group: 33
+  graceful_timeout: 30
+  do_handshake_on_connect: False
+  spew: False
+  workers: 2
+  proc_name: gunicorn-django.conf
+  sendfile: None
+  pidfile: /var/run/gunicorn/gunicorn-django.conf.pid
+  umask: 0
+  on_reload: <function on_reload at 0x7fda96538a28>
+  pre_exec: <function pre_exec at 0x7fda96542488>
+  worker_tmp_dir: None
+  post_worker_init: <function post_worker_init at 0x7fda96542050>
+  limit_request_fields: 100
+  on_exit: <function on_exit at 0x7fda96542b18>
+  config: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x7fda965425f0>
+  post_request: <function post_request at 0x7fda965426e0>
+  user: 33
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x7fda965421b8>
+  threads: 1
+  max_requests: 0
+  limit_request_line: 4094
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  worker_exit: <function worker_exit at 0x7fda96542848>
+  chdir: /home/box/web/ask
+  paste: None
+  default_proc_name: ask.wsgi:application
+  errorlog: ./err.log
+  loglevel: debug
+  logconfig: None
+  syslog_addr: udp://localhost:514
+  syslog_prefix: None
+  daemon: True
+  ciphers: TLSv1
+  on_starting: <function on_starting at 0x7fda965388c0>
+  worker_abort: <function worker_abort at 0x7fda96542320>
+  bind: ['0.0.0.0:8000']
+  raw_env: []
+  reload: False
+  check_config: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x7fda965429b0>
+  timeout: 15
+  ca_certs: None
+  django_settings: None
+  tmp_upload_dir: None
+  keyfile: None
+  backlog: 2048
+  logger_class: gunicorn.glogging.Logger
+  statsd_prefix: 
+[2017-10-21 17:13:37 +0000] [7322] [INFO] Starting gunicorn 19.4.5
+[2017-10-21 17:13:37 +0000] [7322] [DEBUG] Arbiter booted
+[2017-10-21 17:13:37 +0000] [7322] [INFO] Listening at: http://0.0.0.0:8000 (7322)
+[2017-10-21 17:13:37 +0000] [7322] [INFO] Using worker: sync
+[2017-10-21 17:13:37 +0000] [7328] [INFO] Booting worker with pid: 7328
+[2017-10-21 17:13:37 +0000] [7329] [INFO] Booting worker with pid: 7329
+[2017-10-21 17:13:37 +0000] [7322] [DEBUG] 2 workers
+[2017-10-21 17:14:41 +0000] [7322] [INFO] Handling signal: term
+[2017-10-21 14:14:41 +0000] [7329] [INFO] Worker exiting (pid: 7329)
+[2017-10-21 14:14:41 +0000] [7328] [INFO] Worker exiting (pid: 7328)
+[2017-10-21 17:14:41 +0000] [7322] [INFO] Shutting down: Master

@@ -1,0 +1,13 @@
+from django.conf.urls import include, url
+from django.contrib import adm
+urlpatterns = [
+    url(r'^admin/', include(admin.site.urls)),
+    url(r'^$',include(qa.urls), name='index' ),
+    url(r'^login/', include(qa.urls), name='login'),
+    url(r'^signup/', include(qa.urls), name='signup'),
+    url(r'^ask/', include(qa.urls), name='ask'),
+    url(r'^popular/', include(qa.urls), name='popular'),
+    url(r'^new/', include(qa.urls), name='new'),
+    url(r'^login/', include(qa.urls), name='login'),
+]
+
