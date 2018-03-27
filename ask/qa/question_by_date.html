@@ -1,0 +1,8 @@
+<nav><ul class="pagination">
+
+{% for question in page.object_list %}
+   <li>
+   {{question.text}}
+   </li>
+{% endfor %}
+</ul></nav>
